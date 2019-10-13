@@ -1,0 +1,12 @@
+<template>
+        <lightning-card title="Calculator Program">
+            <lightning-input name="number1" label="element1" onchange={handleChange}></lightning-input>
+            <lightning-input name="number2" label="element2" onchange={handleChange}></lightning-input>
+        </lightning-card>
+
+        <lightning-button label="+" name="+" onclick={calculate}></lightning-button>
+        <lightning-button label="-" name="-" onclick={calculate}></lightning-button>
+        <lightning-button label="*" name="*" onclick={calculate}></lightning-button>
+
+        The answer is {finalAnswer}
+</template>

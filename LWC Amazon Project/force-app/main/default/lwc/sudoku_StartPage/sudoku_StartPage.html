@@ -1,0 +1,40 @@
+<template>
+        <lightning-card title="Sudoko Game Board">
+        </lightning-card>
+            <template for:each={numbersList} for:item="numberRow">
+                <lightning-layout horizontal-align={horizontalAlign} key={numberRow.rowKey}>
+                <template for:each={numberRow.rowValue} for:item="individualRow">
+                    <div key={individualRow.id}>
+                        <lightning-layout-item flexibility="auto" padding="around-small">
+                            <template if:true ={individualRow.isNotZero}>
+                                    <lightning-button label={individualRow.val} name={individualRow.id} onclick={selectedItem} class="button-minSize" disabled={individualRow.isFixed} ></lightning-button>
+                                    <!-- disabled={individualRow.isFixed} -->
+                            </template>
+                            <template if:true ={individualRow.isZero}>
+                                    <lightning-button label="" name={individualRow.id} onclick={selectedItem} class="button-minSize"></lightning-button>
+                            </template>
+                        </lightning-layout-item>
+                    </div>
+                                 <!--
+                                     <lightning-button  title={individualRow.val} label={individualRow.val} onclick={selectedItem}>
+
+                        </lightning-button>
+                 <div key="{individualRow.id}" onclick={selectedItem}>
+                    <template:if if:true ={individualRow.isNotZero}>
+                    {individualRow.val} - {individualRow.isNotZero} - {individualRow.id}
+                    </template:if>
+                </div> 
+                -->
+                </template>  
+                </lightning-layout>
+            </template>
+    <template if:true ={isNumberBarAvailable}>
+        <lightning-button-group>
+            <lightning-button label="0" onclick={handleNumberEntered}>0</lightning-button>
+            <lightning-button label="1" onclick={handleNumberEntered}>1</lightning-button>
+            <lightning-button label="2" onclick={handleNumberEntered}>2</lightning-button>
+            <lightning-button label="3" onclick={handleNumberEntered}>3</lightning-button>
+            <lightning-button label="4" onclick={handleNumberEntered}>4</lightning-button>
+        </lightning-button-group>
+    </template>
+</template>

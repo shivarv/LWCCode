@@ -1,0 +1,14 @@
+<template>
+    <lightning-input type="checkbox" label="Show details" onchange={handleChange}></lightning-input>
+    <template if:true={isChecked}>
+        <lightning-card title="HelloConditionalRendering">
+                <div class="slds-m-around_medium">
+                        <div class="slds-m-vertical_medium">
+                            The checkbox is checked
+                        </div>
+                </div>
+        </lightning-card>
+    </template>
+		
+		
+</template>

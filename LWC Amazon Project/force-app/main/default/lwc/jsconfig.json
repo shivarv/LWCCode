@@ -1,0 +1,104 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "c/amzon_RegisterUserCmp": [
+                "amzon_RegisterUserCmp/amzon_RegisterUserCmp.js"
+            ],
+            "c/calcLWC": [
+                "calcLWC/calcLWC.js"
+            ],
+            "c/checkBoxEg": [
+                "checkBoxEg/checkBoxEg.js"
+            ],
+            "c/child": [
+                "child/child.js"
+            ],
+            "c/container": [
+                "container/container.js"
+            ],
+            "c/containerDemo": [
+                "containerDemo/containerDemo.js"
+            ],
+            "c/firstLWC": [
+                "firstLWC/firstLWC.js"
+            ],
+            "c/jsIterationLWC": [
+                "jsIterationLWC/jsIterationLWC.js"
+            ],
+            "c/methodCaller": [
+                "methodCaller/methodCaller.js"
+            ],
+            "c/propertiesLWC": [
+                "propertiesLWC/propertiesLWC.js"
+            ],
+            "c/sharingJsCode": [
+                "sharingJsCode/sharingJsCode.js"
+            ],
+            "c/utils": [
+                "utils/utils.js"
+            ],
+            "c/videoPlayer": [
+                "videoPlayer/videoPlayer.js"
+            ],
+            "c/amzon_ErrorHandler": [
+                "amzon_ErrorHandler/amzon_ErrorHandler.js"
+            ],
+            "c/vedioPlayer": [
+                "vedioPlayer/vedioPlayer.js"
+            ],
+            "c/Sudoku_StartPage": [
+                "Sudoku_StartPage/Sudoku_StartPage.js"
+            ],
+            "c/sudoku_StartPage": [
+                "sudoku_StartPage/sudoku_StartPage.js"
+            ],
+            "c/EventPropagationEg": [
+                "EventPropagationEg/EventPropagationEg.js"
+            ],
+            "c/eventPropagationEg": [
+                "eventPropagationEg/eventPropagationEg.js"
+            ],
+            "c/eventChild": [
+                "eventChild/eventChild.js"
+            ],
+            "c/standardEventsInLWC": [
+                "standardEventsInLWC/standardEventsInLWC.js"
+            ],
+            "c/listContactsEg": [
+                "listContactsEg/listContactsEg.js"
+            ],
+            "c/createNewContactLDS": [
+                "createNewContactLDS/createNewContactLDS.js"
+            ],
+            "c/EditContactFormLDS": [
+                "EditContactFormLDS/EditContactFormLDS.js"
+            ],
+            "c/editContactLDS": [
+                "editContactLDS/editContactLDS.js"
+            ],
+            "c/ViewRecordLDS": [
+                "ViewRecordLDS/ViewRecordLDS.js"
+            ],
+            "c/viewRecordLDS": [
+                "viewRecordLDS/viewRecordLDS.js"
+            ],
+            "c/createDataTableLDS": [
+                "createDataTableLDS/createDataTableLDS.js"
+            ],
+            "c/apexMethodEg": [
+                "apexMethodEg/apexMethodEg.js"
+            ]
+        },
+        "experimentalDecorators": true
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

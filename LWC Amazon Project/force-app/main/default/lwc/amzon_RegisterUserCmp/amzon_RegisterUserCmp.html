@@ -1,0 +1,16 @@
+<template>
+
+    <lightning-card variant="narrow" icon-name="standard:contact">
+    <h1 slot="title">Register The New User</h1>
+        <lightning-input label="first Name"></lightning-input>
+        <lightning-input label="Last Name"></lightning-input>
+        <lightning-input type="email" label="email" value="abc@example.com"> </lightning-input>
+        <lightning-input type="tel" label="Telephone"
+            value="343-343-3434" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">   </lightning-input>
+    <div slot="footer">
+        <h6>    <lightning-button label="Register"></lightning-button>
+        </h6>
+    </div>
+</lightning-card>
+
+</template>
